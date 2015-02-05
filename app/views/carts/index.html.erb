@@ -1,25 +1,25 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
 
-<h1>Listing Carts</h1>
+<h2>Your Cart</h2>
 
 <table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+   <% @cart.line_items.each do |item| %>
+   <tr>
+      <td><%= item.quantity %> &times; </td>
+      <td><%= item.product.title %></td>
+      <td class = "item_price" > <%= number_to_currency(item.total_price) %> </td>
+      <td> <%= button_to 'Delete this Product', item, :method => :delete, :confirm => 'Are you sure?' %>  </td>
+   </tr>
+   <% end %>
 
-  <tbody>
-    <% @carts.each do |cart| %>
-      <tr>
-        <td><%= link_to 'Show', cart %></td>
-        <td><%= link_to 'Edit', edit_cart_path(cart) %></td>
-        <td><%= link_to 'Destroy', cart, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
+   <tr class="total_line">
+      <td colspan="2"> Total </td>
+      <td class="total_cell"> <%= number_to_currency(@cart.total_price) %> </td>
+   </tr>
 </table>
 
-<br>
+<%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-<%= link_to 'New Cart', new_cart_path %>
+
