@@ -12,7 +12,7 @@
 	  <h3><%= product.title %></h3>
 	  <p><%= sanitize(product.description) %></p>
 	  <div class="price_line">
-	    <span class="price"><%= number_to_currency(product.price) %>  </span>
+	    <span class="price"><%= number_to_currency(product.price, :unit =>'€') %>  </span>
 	  </div>
         </div>
 	<% end %>
