@@ -31,6 +31,10 @@
 	margin-left: 100px;
 	margin-top: 1em;
 	margin-bottom: 1em;
+
+	form, div {
+	display: inline;
+	}
    }
    .price {
 	color: #44a;
