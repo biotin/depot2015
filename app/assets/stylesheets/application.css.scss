@@ -39,7 +39,7 @@
   background: #141;
 
   #main {
-	 margin-left: 17em;
+	 margin-left: 255px;
 	 padding: 1em;
          background: white;
   }
@@ -49,7 +49,8 @@
    padding: 1em 2em;
    width: 13em;
    background: #141;
-  
+   a{background-color:transparent;}
+   width: 200px;
    form, div {
     display: inline;
    }
