@@ -26,6 +26,44 @@
 	 float: left;
   }
 }
+.depot_form {
+
+  fieldset {
+   background: #efe;
+
+     legend {
+       color: #dfd;
+       background: #141;
+       font-family: sans-serif;
+       padding: 0.2em 1em;
+     }
+  }
+
+  form {
+
+     label {
+       width: 5em;
+       float: left;
+       text-align: right;
+       padding-top: 0.2em;
+       margin-right: 0.1em;
+       display: block;
+     }
+
+  select, textarea, input {
+       margin-left: 0.5em;
+     }
+
+  .submit {
+    margin-left: 4em;
+  }
+
+  br {
+   display: none
+  }
+ }
+}
+
 #notice {
   color: #000 !important;
   border: 2px solid red;
@@ -39,7 +77,7 @@
   background: #141;
 
   #main {
-	 margin-left: 255px;
+	 margin-left: 270px;
 	 padding: 1em;
          background: white;
   }
