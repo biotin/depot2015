@@ -55,7 +55,10 @@ ActiveAdmin.setup do |config|
   # This setting changes the method which Active Admin calls
   # within the application controller.
   config.authentication_method = :authenticate_admin_user!
-
+  
+  config.before_filter do
+    params.permit
+  end
   # == User Authorization
   #
   # Active Admin will automatically call an authorization
@@ -137,8 +140,6 @@ ActiveAdmin.setup do |config|
   #
   # You can add before, after and around filters to all of your
   # Active Admin resources and pages from here.
-  #
-  # config.before_filter :do_something_awesome
 
   # == Setting a Favicon
   #

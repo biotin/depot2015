@@ -23,5 +23,6 @@ class Product < ActiveRecord::Base
 		  errors.add(:base, 'Product Position Exist')
 		  return false
 		end
-	end
+        end
+
 end
