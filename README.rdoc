@@ -1,4 +1,4 @@
-== README
+
 
 Agile Web Development with Rails 4.2 and Ruby 2.1.5
 
@@ -10,4 +10,12 @@ Agile Web Development with Rails 4.2 and Ruby 2.1.5
 * Database - SQL 3.0 testing 
 
 * Rails version 4.2
+Agile Web Development with Rails 4.2 and Ruby 2.5.0
 
+Ruby version - 2.1.5/2.5.0
+
+System dependencies - Ubuntu 14.10/Debian Testing
+
+Database - SQL 3.0 testing
+
+Rails version 4.2
