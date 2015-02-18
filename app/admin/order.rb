@@ -14,5 +14,30 @@ ActiveAdmin.register Order do
   #   permitted
   # end
 
+  index do
+   column :id
+   column :name
+   column :address
+   column :email
+   column :pay_type
+  
+    test =  LineItem.find_by(id: 7)
+    column :product do
+     number = test.product_id 
+     f = Product.find_by(id: number)
+     f.title
+    end
+
+   # column :quantity do 
+   #  test.quantity
+   # end
+   
+   #test =  LineItem.where(order_id: 5) 
+   #name  = Product.find_by(id: test.product_id )
+   #name.title
+    
+   column :created_at
+   actions
+  end
 
 end

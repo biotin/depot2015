@@ -13,9 +13,11 @@ ActiveAdmin.register Product do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+
   permit_params :title, :description, :price, :image_url
   
   index do
+    column :id
     column :title do |product|
      link_to product.title, admin_product_path(product)
     end
