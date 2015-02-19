@@ -21,12 +21,12 @@ ActiveAdmin.register Order do
    column :email
    column :pay_type
   
-    test =  LineItem.find_by(id: 7)
-    column :product do
-     number = test.product_id 
-     f = Product.find_by(id: number)
-     f.title
-    end
+#    test =  LineItem.find_by(id: 7)
+#    column :product do
+#     number = test.product_id 
+#     f = Product.find_by(id: number)
+#     f.title
+#    end
 
    # column :quantity do 
    #  test.quantity

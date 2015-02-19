@@ -16,6 +16,10 @@ ActiveAdmin.register Product do
 
   permit_params :title, :description, :price, :image_url
   
+  #def permitted_params
+  #  params.permit(:product => [:title, :description, :price, :image_url])
+  #end
+
   index do
     column :id
     column :title do |product|

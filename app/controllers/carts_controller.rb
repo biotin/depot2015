@@ -1,6 +1,9 @@
 class CartsController < ApplicationController
+
+  before_filter :authenticate_admin_user!, except: [:create, :update, :destroy ]
   before_action :set_cart, only: [:show, :edit, :update, :destroy]
   rescue_from ActiveRecord::RecordNotFound, with: :invalid_cart
+
   # GET /carts
   # GET /carts.json
   def index
@@ -13,9 +16,9 @@ class CartsController < ApplicationController
   end
 
   # GET /carts/new
-  def new
-    @cart = Cart.new
-  end
+  #def new
+  #  @cart = Cart.new
+  #end
 
   # GET /carts/1/edit
   def edit

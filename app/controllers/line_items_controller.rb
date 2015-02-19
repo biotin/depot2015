@@ -1,5 +1,7 @@
 class LineItemsController < ApplicationController
   include CurrentCart
+
+  before_filter :authenticate_admin_user!, except: [:create, :update, :destroy, :decrease, :increase ]
   before_action :set_cart, only: [:create, :decrease, :increase]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
