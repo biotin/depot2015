@@ -30,9 +30,11 @@ ActiveAdmin.register Order do
          t.column("Product") {|item| auto_link item.product }
          t.column("Quantity")   {|item|  item.quantity }
          t.column("Price")   {|item| number_to_currency item.product.price * item.quantity }
-         t.column("Total")  {|order| number_to_currency order.total_price}
        end
      end
   end
 
+  sidebar "Total price",:only => :show  do
+    number_to_currency order.line_items.to_a.sum { |item| item.total_price }
+  end
 end
