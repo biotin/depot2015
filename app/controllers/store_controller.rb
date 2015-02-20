@@ -5,6 +5,6 @@ class StoreController < ApplicationController
   before_action :set_cart
 
   def index
-	@products = Product.order(:title)
+	@products = Product.order(:title).paginate(page: params[:page], per_page: 1)
   end
 end
