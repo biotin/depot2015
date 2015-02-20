@@ -25,6 +25,7 @@ ActiveAdmin.register Order do
   end
 
   show do
+
     panel "Order Information" do
        table_for(order.line_items) do |t|
          t.column("Product") {|item| auto_link item.product }
@@ -32,9 +33,20 @@ ActiveAdmin.register Order do
          t.column("Price")   {|item| number_to_currency item.product.price * item.quantity }
        end
      end
+
+     panel "User Information" do
+       table_for(order) do |t|
+         column "Name", :name
+         column "Address", :address
+         column "Email", :email
+         column "Pay Type", :pay_type
+         column "Created:",  :created_at
+       end
+     end
   end
 
   sidebar "Total price",:only => :show  do
+#    Order.name
     number_to_currency order.line_items.to_a.sum { |item| item.total_price }
   end
 end
