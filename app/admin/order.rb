@@ -1,6 +1,5 @@
 ActiveAdmin.register Order do
 
-
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
@@ -13,6 +12,7 @@ ActiveAdmin.register Order do
   #   permitted << :other if resource.something?
   #   permitted
   # end
+  actions  :index, :show, :edit, :destroy
 
   index do
    column :id
@@ -20,24 +20,19 @@ ActiveAdmin.register Order do
    column :address
    column :email
    column :pay_type
-  
-#    test =  LineItem.find_by(id: 7)
-#    column :product do
-#     number = test.product_id 
-#     f = Product.find_by(id: number)
-#     f.title
-#    end
-
-   # column :quantity do 
-   #  test.quantity
-   # end
-   
-   #test =  LineItem.where(order_id: 5) 
-   #name  = Product.find_by(id: test.product_id )
-   #name.title
-    
    column :created_at
    actions
+  end
+
+  show do
+    panel "Order Information" do
+       table_for(order.line_items) do |t|
+         t.column("Product") {|item| auto_link item.product }
+         t.column("Quantity")   {|item|  item.quantity }
+         t.column("Price")   {|item| number_to_currency item.product.price * item.quantity }
+         t.column("Total")  {|order| number_to_currency order.total_price}
+       end
+     end
   end
 
 end
