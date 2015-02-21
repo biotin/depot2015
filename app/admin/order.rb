@@ -13,6 +13,8 @@ ActiveAdmin.register Order do
   #   permitted
   # end
   actions  :index, :show, :edit, :destroy
+  index download_links: [:csv, :xml]
+  show download_links: [:pdf, :xml]
 
   index do
    column :id
@@ -25,7 +27,6 @@ ActiveAdmin.register Order do
   end
 
   show do
-
     panel "Order Information" do
        table_for(order.line_items) do |t|
          t.column("Product") {|item| auto_link item.product }
@@ -45,8 +46,11 @@ ActiveAdmin.register Order do
      end
   end
 
-  sidebar "Total price",:only => :show  do
-#    Order.name
-    number_to_currency order.line_items.to_a.sum { |item| item.total_price }
+  sidebar "Total price", :only => :show  do
+     number_to_currency order.line_items.to_a.sum { |item| item.total_price }
+  end
+
+  sidebar "Export", :only => :show  do
+    link_to 'Export order to PDF', 'javascript:if(window.print)window.print()'
   end
 end
