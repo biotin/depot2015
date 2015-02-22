@@ -13,8 +13,6 @@ ActiveAdmin.register Order do
   #   permitted
   # end
   actions  :index, :show, :edit, :destroy
-  index download_links: [:csv, :xml]
-  show download_links: [:pdf, :xml]
 
   index do
    column :id
@@ -50,7 +48,7 @@ ActiveAdmin.register Order do
      number_to_currency order.line_items.to_a.sum { |item| item.total_price }
   end
 
-  sidebar "Export", :only => :show  do
+  sidebar "Export" do # , :only => :show  do
     link_to 'Export order to PDF', 'javascript:if(window.print)window.print()'
   end
 end

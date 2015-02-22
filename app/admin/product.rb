@@ -15,7 +15,7 @@ ActiveAdmin.register Product do
   # end
 
   permit_params :title, :description, :price, :image_url
-  
+
   #def permitted_params
   #  params.permit(:product => [:title, :description, :price, :image_url])
   #end
@@ -29,13 +29,13 @@ ActiveAdmin.register Product do
      truncate(product.description, :length => 300)
     end
     column :image_url do |product|
-     image_tag(product.image_url, size: "50x50") 
+     image_tag(product.image_url, size: "50x50")
     end
     column :price do |product|
      number_to_currency product.price
     end
     column :created_at
-    column :updated_at 
+    column :updated_at
    actions
   end
 end
