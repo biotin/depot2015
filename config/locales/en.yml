@@ -27,3 +27,23 @@ en:
           questions:     "Questions"
           news:             "News"
           contact:         "Contact"
+
+      store:
+          index:
+            title_html:        "Your Catalog"
+            add_html:         "Add to Cart"
+
+      carts:
+        cart:
+          title:                    "You Cart"
+          empty:                "Empty Cart"
+          checkout:           "Checkout"
+
+      number:
+        currency:
+          format:
+            unit:               "AZN"
+            precision:      2
+            separator:    "."
+            delimiter:      ","
+            format:         "%n&nbsp;%u"
