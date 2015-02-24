@@ -24,7 +24,7 @@
   font: small-caps 40px/40px "Times New Roman", serif;
   color: #282;
   text-align: center;
- 
+
   img {
 	 float: left;
   }
@@ -74,6 +74,11 @@
   margin-bottom: 2em;
   background-color: #f0f0f0;
   font: bold smaller sans-serif;
+}
+
+.locale {
+  float: right;
+  margin: -0.25em 0.1em;
 }
 
 #columns {
