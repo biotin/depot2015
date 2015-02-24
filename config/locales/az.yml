@@ -1,0 +1,9 @@
+#AzeriVersion
+az:
+      layouts:
+        application:
+          title:               "Pragmatic Magazin"
+          home:            "Esas"
+          questions:     "Suallar"
+          news:             "Xeberler"
+          contact:         "Contact"

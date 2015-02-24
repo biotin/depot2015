@@ -20,4 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+      layouts:
+        application:
+          title:               "Pragmatic Bookshelf"
+          home:            "Home"
+          questions:     "Questions"
+          news:             "News"
+          contact:         "Contact"

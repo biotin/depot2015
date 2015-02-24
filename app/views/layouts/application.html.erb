@@ -11,7 +11,7 @@
  <body class="<%= controller.controller_name %>">
    <div id="banner">
  	<%= image_tag("logo.png") %>
- 	<%= @page_title || "Medical Store" %>
+ 	<%= @page_title || t('.title') %>
    </div>
    <div id="columns">
     <div id="side">
@@ -24,10 +24,10 @@
 	</div>
 
 	<ul>
- 	 <li><a href="http://www....">Home</a></li>
- 	 <li><a href="http://www..../faq">Questions</a></li>
- 	 <li><a href="http://www..../news">News</a></li>
- 	 <li><a href="http://www..../contact">Contact</a></li>
+ 	 <li><a href="http://www...."><%= t('.home')%></a></li>
+ 	 <li><a href="http://www..../faq"><%= t('.questions')%></a></li>
+ 	 <li><a href="http://www..../news"><%= t('.news') %></a></li>
+ 	 <li><a href="http://www..../contact"><%= t('.contact') %></a></li>
  	</ul>
     </div>
    <div id="main">
@@ -40,4 +40,3 @@
   </div>
  </body>
  </html>
-
