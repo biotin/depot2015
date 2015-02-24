@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root to: 'store#index', as: 'store'
+  #root to: 'store#index', as: 'store'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -68,5 +68,12 @@ Rails.application.routes.draw do
   resources :line_items do
     put 'decrease', on: :member
     put 'increase', on: :member
+  end
+
+  scope '(:locale)' do
+    resources :orders
+    resources :line_items
+    resources :carts
+    root 'store#index', as: 'store', via: :all
   end
 end
