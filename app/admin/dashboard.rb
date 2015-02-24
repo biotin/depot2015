@@ -16,8 +16,8 @@ ActiveAdmin.register_page "Dashboard" do
 
         panel "Recent Orders" do
           table_for Order.order('id desc').limit(10) do
-            column("Name")   {|order| link_to(order.name, admin_product_path(order))  }
-            column("Total")   {|order| number_to_currency link_to(order.line_items.to_a.sum { |item| item.total_price }, admin_product_path(order))  }
+            column("Name")   {|order| link_to(order.name, admin_order_path(order))  }
+            column("Total")   {|order| number_to_currency link_to(order.line_items.to_a.sum { |item| item.total_price }, admin_order_path(order))  }
           end
         end
     end

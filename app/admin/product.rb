@@ -31,6 +31,6 @@ permit_params :title, :description, :price, :image_url, :locale
       f.input :price
       f.input  :created_at
     end
-    f.actions 
+    f.actions
   end
 end
