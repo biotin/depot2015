@@ -36,6 +36,8 @@ ru:
 
       date:
         formats:
+          default:          "%Y/%m/%d"
+          short:              "%b %d"
           long:              "%Y-%m-%d"
 
       orders:

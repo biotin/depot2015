@@ -32,7 +32,14 @@ az:
         formats:
           default:          "%Y/%m/%d"
           short:              "%b %d"
-          long:               "%B %d, %Y"
+          long:               " %d.%m.%Y"
+
+      date:
+        formats:
+          default:          "%Y/%m/%d"
+          short:              "%b %d"
+          long:              "%Y-%m-%d"
+
 
       orders:
         new:
@@ -44,6 +51,12 @@ az:
           pay_type:       "Satish metod"
           pay_prompt_html:     "Satish metodu sech"
           submit:           "Sifariş et"
+          created_at:   "Elave olunub"
+
+      products:
+        form:
+          title:                "Название"
+
 
       activerecord:
         models:
@@ -56,9 +69,107 @@ az:
             name:             "Ad ve Soyas"
             email:            "Email"
             pay_type:      "Satish metod"
+            created_at:   "Elave olunub"
+            updated_at:  "Deyishdirilib"
+          product:
+            title:              "Ad"
+            locale:          "Dilin növü"
+            description:  "Melumat"
+            image_url:    "Shekil linki"
+            price:            "Qiymet"
+            created_at: "Yaradilma tarixi"
+            updated_at: "Deyishdirilib"
         errors:
           messages:
             inclusion:        " - xahish olunur melumati daxil edin!"
             blank:              " - xahish olunur melumati daxil edin!"
 
       thanks:               "Sifarish gebul olundu. Teshekkür edirik."
+
+#ActiveAdminRU
+
+      active_admin:
+        dashboard: "Idare paneli"
+        dashboard_welcome:
+            welcome: "Salam. ActiveAdmin Panele xosh geldiniz!"
+            call_to_action: "Bura nese elave etmek üchün 'app/admin/dashboard.rb' daxil olun."
+        view: "Achmag"
+        edit: "Deyishmek"
+        delete: "Silmek"
+        delete_confirmation: "Eminsizki bunu silmek isteyirsiniz?"
+        new_model: "Yaratmag"
+        edit_model: "Deyishmek"
+        delete_model: "Silmek"
+        details: "%{model} elave"
+        cancel: "Legv et"
+        empty: "Boshdir"
+        previous: "Qeri"
+        next: "Növbeti"
+        download: "Yükleme:"
+        has_many_new: "Elave etmek"
+        has_many_delete: "Silmek"
+        has_many_remove: "Yigishtirmag"
+        filters:
+          buttons:
+            filter: "Filtr etmek"
+            clear: "Boshaltmag"
+          predicates:
+            contains: "Daxildir"
+            equals: "="
+            starts_with: "Bashlanir"
+            ends_with: "Qurtarir"
+            greater_than: "chox"
+            less_than: "az"
+        status_tag:
+          "yes": "He"
+          "no": "Yox"
+        main_content: "Yaradin %{model}#main_content daxilini göstermek üchün."
+        logout: "Chixmag"
+        powered_by: "Düzeldilib %{active_admin} %{version}"
+        sidebars:
+          filters: "Filtrlar"
+        pagination:
+          empty: "Tapilmayib"
+          one: "Netice: <b>1</b> %{model}"
+          one_page: "Netice: <b>%{n}</b> %{model}"
+          multiple: "Netice: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+          multiple_without_total: "Netice: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+          entry:
+            one: "yazi"
+            few: "yazilar"
+            many: "yazilar"
+            other: "yazilar"
+          any: "Her bir"
+          blank_slate:
+            content: "Heleki yox %{resource_name}."
+            link: "Yaratmag"
+          dropdown_actions:
+            button_label: "Emeliyatlar"
+          batch_actions:
+            button_label: "Qrupp emeliyatlari"
+            default_confirmation: "Eminsizki bunu etmek isteyirsiz?"
+            delete_confirmation: "Eminsinizki bunu silmek isteyirsiz?"
+            succesfully_destroyed:
+              one: "Silindi."
+              few: "Silindi."
+              many: "Silindi."
+              other: "Silindi."
+            selection_toggle_explanation: "(Qeri qaytarmag)"
+            link: "Yaratmag"
+            action_label: "%{title} sechilmish"
+            labels:
+              destroy: "Silmek"
+          comments:
+            resource_type: "Resurs növü"
+            author_type: "Autor tipi"
+            body: "Tekst"
+            author: "Autor"
+            title: "şərh"
+            add: "şərh əlavə etmak"
+            resource: "Resurs"
+            no_comments_yet: "şərhler heleki yoxdur"
+            author_missing: "Anonim"
+            title_content: "şərh (%{count})"
+            errors:
+              empty_text: "şərh yazilmayib"
+###Devise --Using Devise18n Gem ;)

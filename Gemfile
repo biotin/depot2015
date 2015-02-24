@@ -25,6 +25,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 #Adding Russian Lang
 gem 'russian', '~> 0.6.0'
+#Adding Azeri and Other
+gem 'rails-i18n', '~> 4.0.0'
 #ActiveAdmin
 gem 'activeadmin', github: 'activeadmin'
 #Adding Devise

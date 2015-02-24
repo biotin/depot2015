@@ -9,7 +9,7 @@ permit_params :title, :description, :price, :image_url, :locale
      link_to product.title, admin_product_path(product)
     end
     column :description do |product|
-     truncate(product.description, :length => 300)
+     truncate(product.description, :length => 20)
     end
     column :image_url do |product|
      image_tag(product.image_url, size: "50x50")
