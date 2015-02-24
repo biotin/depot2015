@@ -4,7 +4,7 @@ class AdminUser < ActiveRecord::Base
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  ROLES = %w(administrator productmanager ordermanager)
+  ROLES = %w[administrator productmanager ordermanager]
 
   def role?(base_role)
     ROLES.index(base_role.to_s) <= ROLES.index(role)
