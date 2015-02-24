@@ -1,0 +1,56 @@
+#AzeriVersion
+ru:
+      layouts:
+        application:
+          title:               "Магазин"
+          home:            "Главная"
+          questions:     "Вопросы"
+          news:             "Новости"
+          contact:         "Контакты"
+
+      store:
+          index:
+            title_html:        "Каталог"
+            add_html:         "Добавить на карту"
+
+      carts:
+        cart:
+          title:                    "Моя карта"
+          empty:                "Удалить карту"
+          checkout:           "Оплатить"
+
+      number:
+        currency:
+          format:
+            unit:               "AZN"
+            precision:      2
+            separator:    "."
+            delimiter:      ","
+            format:          "%n&nbsp;%u"
+
+      orders:
+        new:
+          legend:           "Введите Информацию"
+        form:
+          name:             "Имя и фамилия"
+          address_html: "Адресс"
+          email:              "E-Mail"
+          pay_type:       "Метод оплаты"
+          pay_prompt_html:     "Выбор метода оплаты"
+          submit:           "Отправить заказ"
+
+      activerecord:
+        models:
+          order:              "Заказ"
+        attributes:
+          order:
+            address:        "Адресс"
+            name:             "Имя и фамилия"
+            email:            "Email"
+            pay_type:      "Метод оплаты"
+        errors:
+          messages:
+            inclusion:        " - пожалуйста введи информацию!"
+            blank:              " - пожалуйста введи информацию!"
+
+      thanks:               "Заказ принят. Благодарим Вас!"
