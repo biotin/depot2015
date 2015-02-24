@@ -1,10 +1,10 @@
 class ProductsController < ApplicationController
   before_filter :authenticate_admin_user!
   before_action :set_product, only: [:show, :edit, :update, :destroy]
-  
+
   # GET /products.json
   def index
-    @products = Product.all
+    @products = Product.where(locale: I18n.locale)
   end
 
   # GET /products/1
