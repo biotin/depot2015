@@ -28,6 +28,12 @@ az:
             delimiter:      ","
             format:          "%n&nbsp;%u"
 
+      time:
+        formats:
+          default:          "%Y/%m/%d"
+          short:              "%b %d"
+          long:               "%B %d, %Y"
+
       orders:
         new:
           legend:           "Melumati daxil et"
@@ -41,7 +47,9 @@ az:
 
       activerecord:
         models:
-          order:              "Sifarish"
+          order:              "Sifarishler"
+          product:          "Mallar"
+          admin_user:    "Istifadechiler"
         attributes:
           order:
             address:        "Address"

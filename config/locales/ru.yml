@@ -28,6 +28,16 @@ ru:
             delimiter:      ","
             format:          "%n&nbsp;%u"
 
+      time:
+        formats:
+          default:          "%Y/%m/%d"
+          short:              "%b %d"
+          long:               " %d.%m.%Y"
+
+      date:
+        formats:
+          long:              "%Y-%m-%d"
+
       orders:
         new:
           legend:           "Введите Информацию"
@@ -38,19 +48,125 @@ ru:
           pay_type:       "Метод оплаты"
           pay_prompt_html:     "Выбор метода оплаты"
           submit:           "Отправить заказ"
+          created_at:   "Создано"
+
+      products:
+        form:
+          title:                "Название"
 
       activerecord:
         models:
-          order:              "Заказ"
+          order:              "Заказы"
+          product:          "Продукты"
+          admin_user:    "Пользователи"
         attributes:
           order:
             address:        "Адресс"
             name:             "Имя и фамилия"
             email:            "Email"
             pay_type:      "Метод оплаты"
+            created_at:   "Создано"
+            updated_at:  "Обновлено"
+          product:
+            title:              "Название"
+            locale:          "Категория языка"
+            description:  "Описание"
+            image_url:    "Ссылка на фото товара"
+            price:            "Цена товара"
+            created_at: "Время создания"
+            updated_at: "Обновлено"
         errors:
           messages:
             inclusion:        " - пожалуйста введи информацию!"
             blank:              " - пожалуйста введи информацию!"
 
       thanks:               "Заказ принят. Благодарим Вас!"
+
+
+#ActiveAdminRU
+
+      active_admin:
+        dashboard: "Панель управления"
+        dashboard_welcome:
+            welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
+            call_to_action: "Чтобы добавить сюда что-нибудь загляните в 'app/admin/dashboard.rb'"
+        view: "Открыть"
+        edit: "Изменить"
+        delete: "Удалить"
+        delete_confirmation: "Вы уверены, что хотите удалить это?"
+        new_model: "Создать"
+        edit_model: "Изменить"
+        delete_model: "Удалить"
+        details: "%{model} подробнее"
+        cancel: "Отмена"
+        empty: "Пусто"
+        previous: "Пред."
+        next: "След."
+        download: "Загрузка:"
+        has_many_new: "Добавить"
+        has_many_delete: "Удалить"
+        has_many_remove: "Убрать"
+        filters:
+          buttons:
+            filter: "Фильтровать"
+            clear: "Очистить"
+          predicates:
+            contains: "Содержит"
+            equals: "="
+            starts_with: "Начинается с"
+            ends_with: "Заканчивается"
+            greater_than: "больше"
+            less_than: "меньше"
+        status_tag:
+          "yes": "Да"
+          "no": "Нет"
+        main_content: "Создайте %{model}#main_content для отображения содержимого."
+        logout: "Выйти"
+        powered_by: "Powered by %{active_admin} %{version}"
+        sidebars:
+          filters: "Фильтры"
+        pagination:
+          empty: "Не найдено"
+          one: "Результат: <b>1</b> %{model}"
+          one_page: "Результат: <b>%{n}</b> %{model}"
+          multiple: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+          multiple_without_total: "Результат: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+          entry:
+            one: "запись"
+            few: "записи"
+            many: "записей"
+            other: "записей"
+          any: "Любой"
+          blank_slate:
+            content: "Пока нет %{resource_name}."
+            link: "Создать"
+          dropdown_actions:
+            button_label: "Oперации"
+          batch_actions:
+            button_label: "Групповые операции"
+            default_confirmation: "Вы уверены, что вы хотите это сделать?"
+            delete_confirmation: "Вы уверены, что хотите удалить?"
+            succesfully_destroyed:
+              one: "Успешно удалено."
+              few: "Успешно удалено."
+              many: "Успешно удалено."
+              other: "Успешно удалено."
+            selection_toggle_explanation: "(Отметить всё / Снять выделение)"
+            link: "Создать"
+            action_label: "%{title} выбранное"
+            labels:
+              destroy: "Удалить"
+          comments:
+            resource_type: "Тип ресурса"
+            author_type: "Тип автора"
+            body: "Текст"
+            author: "Автор"
+            title: "Комментарий"
+            add: "Добавить Комментарий"
+            resource: "Ресурс"
+            no_comments_yet: "Пока нет комментариев."
+            author_missing: "Аноним"
+            title_content: "Комментарии (%{count})"
+            errors:
+              empty_text: "Комментарий не сохранен, текст не должен быть пустым."
+###Devise --Using Devise18n Gem ;)

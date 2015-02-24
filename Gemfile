@@ -23,10 +23,14 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+#Adding Russian Lang
+gem 'russian', '~> 0.6.0'
+#ActiveAdmin
 gem 'activeadmin', github: 'activeadmin'
 #Adding Devise
 gem 'devise'
+#DeviseI18n
+gem 'devise-i18n'
 #Adding CanCanCan
 gem 'cancancan', '~> 1.10'
 
