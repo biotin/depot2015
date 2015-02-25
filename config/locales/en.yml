@@ -60,3 +60,91 @@ en:
           submit:           "Place Order"
 
       thanks:               "Thank You for you Order"
+
+#TranslateOrderInfoPANELS
+      orderinfo:          "Order Inforamtion"
+      ordername:      "Name : "
+      orderquantity:  "Quantity"
+      orderprice:         "Price"
+#TranslateUserInfoPANELS
+      username:         "Name"
+      useradress:       "Address"
+      useremail:        "Email"
+      userpaytp:        "pay Type"
+      usercreatdt:       "Created"
+#TranslateSidebars
+      totalpr:        "Total Price"
+      exprtpdf:        "Export to PDF"
+      exportpdflink:  "Export!"
+
+
+      active_admin:
+        dashboard: Dashboard
+        dashboard_welcome:  "Welcome to Active Admin. This is the default dashboard page."
+        view: "View"
+        edit: "Edit"
+        delete: "Delete"
+        delete_confirmation: "Are you sure you want to delete this?"
+        new_model: "New"
+        edit_model: "Edit"
+        delete_model: "Delete"
+        details: "%{model} details"
+        cancel: "Cancel"
+        empty: "Empty"
+        previous: "Prev."
+        next: "Next."
+        download: "Dowloadn:"
+        has_many_new: "Add"
+        has_many_delete: "Delete"
+        has_many_remove: "Remove"
+        filters:
+          buttons:
+            filter: "Filter"
+            clear: "Clera"
+          predicates:
+            contains: "Contains"
+            equals: "="
+            starts_with: "Start with"
+            ends_with: "End with"
+            greater_than: "greater"
+            less_than: "less"
+        status_tag:
+          "yes": "Yes"
+          "no": "No"
+        main_content: "Please implement %{model}#main_content to display content."
+        logout: "Logout"
+        powered_by: "Powered by %{active_admin} %{version}"
+        sidebars:
+          filters: "Filters"
+        pagination:
+          empty: "Empty"
+          one: "Displaying: <b>1</b> %{model}"
+          one_page: "Displaying: <b>%{n}</b> %{model}"
+          multiple: "Displaying: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+          multiple_without_total: "Displaying:%{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+          entry:
+            one: "entry"
+            few: "entry"
+            many:  "entry"
+            other:  "entry"
+          any: "Any"
+          blank_slate:
+            content:  "There are no %{resource_name} yet."
+            link: "Create one"
+          dropdown_actions:
+            button_label: "Actions"
+          batch_actions:
+            button_label: "Grup Actions"
+            default_confirmation: "Are you sure you want to do this?"
+            delete_confirmation: "Are you sure you want to delete these %{plural_model}?"
+            succesfully_destroyed:
+              one: "Successfully destroyed 1 %{model}"
+              few: "Successfully destroyed %{count} %{plural_model}"
+              many: "Successfully destroyed %{count} %{plural_model}"
+              other: "Successfully destroyed %{count} %{plural_model}"
+            selection_toggle_explanation: "(Toggle Selection)"
+            link: "Create one"
+            action_label: "%{title} Selected"
+            labels:
+              destroy: "Delete"
+###Devise --Using Devise18n Gem ;)

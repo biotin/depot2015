@@ -84,14 +84,29 @@ ru:
 
       thanks:               "Заказ принят. Благодарим Вас!"
 
+#TranslateOrderInfoPANELS
+      orderinfo:          "Информация о Заказе"
+      ordername:      "Заказано : "
+      orderquantity:  "Количество"
+      orderprice:         "Цена"
+#TranslateUserInfoPANELS
+      username:         "Имя"
+      userinfo:             "Информация о пользователе"
+      useradress:       "Адрес"
+      useremail:        "Email"
+      userpaytp:        "Метод оплаты"
+      usercreatdt:       "Добавлено"
+#TranslateSidebars
+      totalpr:        "Общая цена"
+      exprtpdf:        "Экспорт в PDF"
+      exportpdflink:  "Отправить на печать!"
+
 
 #ActiveAdminRU
 
       active_admin:
         dashboard: "Панель управления"
-        dashboard_welcome:
-            welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
-            call_to_action: "Чтобы добавить сюда что-нибудь загляните в 'app/admin/dashboard.rb'"
+        dashboard_welcome: "Добро пожаловать в Active Admin. Это стандартная страница управления сайтом."
         view: "Открыть"
         edit: "Изменить"
         delete: "Удалить"
@@ -158,17 +173,4 @@ ru:
             action_label: "%{title} выбранное"
             labels:
               destroy: "Удалить"
-          comments:
-            resource_type: "Тип ресурса"
-            author_type: "Тип автора"
-            body: "Текст"
-            author: "Автор"
-            title: "Комментарий"
-            add: "Добавить Комментарий"
-            resource: "Ресурс"
-            no_comments_yet: "Пока нет комментариев."
-            author_missing: "Аноним"
-            title_content: "Комментарии (%{count})"
-            errors:
-              empty_text: "Комментарий не сохранен, текст не должен быть пустым."
 ###Devise --Using Devise18n Gem ;)

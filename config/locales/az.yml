@@ -8,10 +8,14 @@ az:
           news:             "Xeberler"
           contact:         "Contact"
 
+        #  productinfo: "Sifarish olunmush mallar"
+
+
       store:
           index:
             title_html:        "Catalog"
             add_html:         "Carta elave et"
+
 
       carts:
         cart:
@@ -55,8 +59,7 @@ az:
 
       products:
         form:
-          title:                "Название"
-
+          title:                "Ad"
 
       activerecord:
         models:
@@ -85,14 +88,32 @@ az:
             blank:              " - xahish olunur melumati daxil edin!"
 
       thanks:               "Sifarish gebul olundu. Teshekkür edirik."
+#TranslateOrderInfoPANELS
+      orderinfo:          "Sifarish Melumat"
+      ordername:      "Sifarish olunub : "
+      orderquantity:  "Miqdar"
+      orderprice:         "Qiymet"
+#TranslateUserInfoPANELS
+      username:         "Kim"
+      userinfo:             "Informasiya"
+      useradress:       "Address"
+      useremail:        "Email"
+      userpaytp:        "Satish metod"
+      usercreatdt:       "Elave olunub"
+#TranslateSidebars
+      totalpr:        "Ümumi Qiymet"
+      exprtpdf:        "Pdf formata Chap"
+      exportpdflink:  "Chap et!"
+
 
 #ActiveAdminRU
 
       active_admin:
-        dashboard: "Idare paneli"
-        dashboard_welcome:
-            welcome: "Salam. ActiveAdmin Panele xosh geldiniz!"
-            call_to_action: "Bura nese elave etmek üchün 'app/admin/dashboard.rb' daxil olun."
+        batch_actions:
+          button_label: "Melumat"
+        any: "Her biri"
+        dashboard: Istifade Paneli
+        dashboard_welcome: "Salam. Administrasiya Panele daxil oldugunuz üchün teshekkür edirik."
         view: "Achmag"
         edit: "Deyishmek"
         delete: "Silmek"
@@ -159,17 +180,4 @@ az:
             action_label: "%{title} sechilmish"
             labels:
               destroy: "Silmek"
-          comments:
-            resource_type: "Resurs növü"
-            author_type: "Autor tipi"
-            body: "Tekst"
-            author: "Autor"
-            title: "şərh"
-            add: "şərh əlavə etmak"
-            resource: "Resurs"
-            no_comments_yet: "şərhler heleki yoxdur"
-            author_missing: "Anonim"
-            title_content: "şərh (%{count})"
-            errors:
-              empty_text: "şərh yazilmayib"
 ###Devise --Using Devise18n Gem ;)
