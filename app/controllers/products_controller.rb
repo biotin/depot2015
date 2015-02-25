@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
-  before_filter :authenticate_admin_user!
+  before_filter :authenticate_admin_user!, except: [:show ]
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  load_and_authorize_resource
 
   # GET /products.json
   def index

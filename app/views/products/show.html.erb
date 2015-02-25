@@ -17,6 +17,7 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
-
+<% if can?  :update, @product %>
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<% end %>
+<%= link_to 'Back', store_path %>

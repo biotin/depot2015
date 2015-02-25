@@ -3,6 +3,8 @@ class Ability
 
   def initialize(admin_user)
 
+    admin_user ||= AdminUser.new #GuestForStore
+   if
     if admin_user.role == "productmanager"
       can :manage, Product
       can :read, ActiveAdmin::Page, :name => "Dashboard"
@@ -14,5 +16,8 @@ class Ability
     end
 
    can :manage, :all if admin_user.role == "administrator"
-  end
+   end
+ else
+   can :read, Product
+ end
 end

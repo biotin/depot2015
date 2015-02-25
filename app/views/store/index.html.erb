@@ -3,8 +3,8 @@
   <% @products.each do |product| %>
     <% cache ['entry', product] do %>
 	<div class="entry">
-	  <%= image_tag(product.image_url, class: 'list_image') %>
-	  <h3><%= product.title %></h3>
+	  <%= link_to image_tag(product.image_url, class: 'list_image'), product %>
+	  <h3><%= link_to product.title, product %></h3>
 	  <p><%= sanitize(product.description) %></p>
 	  <div class="price_line">
 	    <span class="price"><%= number_to_currency(product.price, :unit =>'AZN') %>  </span>

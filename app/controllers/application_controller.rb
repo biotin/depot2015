@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
     redirect_to '/admin/dashboard', :alert => exception.message
   end
 
+  def current_ability
+    @current_ability ||= Ability.new(current_admin_user)
+  end
+
   protected
   def set_i18n_locale_from_params
     if params[:locale]
@@ -21,5 +25,5 @@ class ApplicationController < ActionController::Base
   def default_url_options
     { locale: I18n.locale }
   end
-  
+
 end
