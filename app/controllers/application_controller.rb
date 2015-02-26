@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   before_action :set_i18n_locale_from_params
 
   def access_denied(exception)
-    redirect_to '/admin/dashboard', :alert => exception.message
+    redirect_to store_path, :alert => exception.message
   end
 
   def current_ability
