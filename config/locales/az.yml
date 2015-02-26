@@ -2,22 +2,22 @@
 az:
       layouts:
         application:
-          title:               "Pragmatic Magazin"
-          home:            "Esas"
+          title:               "Kitab Evi"
+          home:            "Əsas"
           questions:     "Suallar"
-          news:             "Xeberler"
-          contact:         "Contact"
+          news:             "Xəbərlər"
+          contact:         "Əlagə"
         #  productinfo: "Sifarish olunmush mallar"
       store:
           index:
-            title_html:        "Catalog"
-            add_html:         "Carta elave et"
+            title_html:        "Katalog"
+            add_html:         "Karta əlavə et"
 
       carts:
         cart:
-          title:                    "Menim Cartim"
-          empty:                "Carti boshalt"
-          checkout:           "Odeme et"
+          title:                    "Mənim Kartım"
+          empty:                "Kartı boşalt"
+          checkout:           "Ödəmə et"
 
       number:
         currency:
@@ -43,15 +43,15 @@ az:
 
       orders:
         new:
-          legend:           "Melumati daxil et"
+          legend:           "Məlumatı daxil et"
         form:
           name:             "Ad ve Soyad"
-          address_html: "Address"
+          address_html:  "Ünvan"
           email:              "E-Mail"
-          pay_type:       "Satish metod"
-          pay_prompt_html:     "Satish metodu sech"
+          pay_type:       "Satiş növü"
+          pay_prompt_html:     "Satiş növü seç"
           submit:           "Sifariş et"
-          created_at:   "Elave olunub"
+          created_at:   "Əlavə olunub"
 
       products:
         form:
@@ -59,112 +59,112 @@ az:
 
       activerecord:
         models:
-          order:              "Sifarishler"
+          order:              "Sifarişlər"
           product:          "Mallar"
-          admin_user:    "Istifadechiler"
+          admin_user:    "Istifadəçilər"
         attributes:
           order:
-            address:        "Address"
-            name:             "Ad ve Soyas"
+            address:        "Ünvan"
+            name:             "Ad ve Soyad"
             email:            "Email"
-            pay_type:      "Satish metod"
-            created_at:   "Elave olunub"
-            updated_at:  "Deyishdirilib"
+            pay_type:      "Satış növ"
+            created_at:   "Əlavə olunub"
+            updated_at:  "Dəyişdirilib"
           product:
             title:              "Ad"
-            locale:          "Dilin növü"
-            description:  "Melumat"
-            image_url:    "Shekil linki"
-            price:            "Qiymet"
-            created_at: "Yaradilma tarixi"
-            updated_at: "Deyishdirilib"
+            locale:          "Dilin seçimi"
+            description:  "Məlumat"
+            image_url:    "Şəkil linki"
+            price:            "Qiymət"
+            created_at: "Yaradılma tarixi"
+            updated_at: "Dəyişdirilib"
         errors:
           messages:
-            inclusion:        " - xahish olunur melumati daxil edin!"
-            blank:              " - xahish olunur melumati daxil edin!"
+            inclusion:        " - xahiş olunur məlumatı daxil edin!"
+            blank:              " - xahiş olunur məlumatı daxil edin!"
 
-      thanks:               "Sifarish gebul olundu. Teshekkür edirik."
+      thanks:               "Sifariş gəbul olundu. Tışəkkür edirik."
 #TranslateOrderInfoPANELS
-      orderinfo:          "Sifarish Melumat"
-      ordername:      "Sifarish olunub : "
+      orderinfo:          "Sifariş Məlumatı"
+      ordername:      "Sifariş olunub : "
       orderquantity:  "Miqdar"
-      orderprice:         "Qiymet"
+      orderprice:         "Qiymət"
 #TranslateUserInfoPANELS
       username:         "Kim"
       userinfo:             "Informasiya"
-      useradress:       "Address"
+      useradress:       "Ünvan"
       useremail:        "Email"
-      userpaytp:        "Satish metod"
-      usercreatdt:       "Elave olunub"
+      userpaytp:        "Satiş növü"
+      usercreatdt:       "Əlavə olunub"
 #TranslateSidebars
-      totalpr:        "Ümumi Qiymet"
-      exprtpdf:        "Pdf formata Chap"
-      exportpdflink:  "Chap et!"
+      totalpr:        "Ümumi Qiymət"
+      exprtpdf:        "Pdf formata Çap"
+      exportpdflink:  "Çap et!"
 
 #ActiveAdminRU
 
       active_admin:
         batch_actions:
-          button_label: "Melumat"
-        any: "Her biri"
-        dashboard: Istifade Paneli
-        dashboard_welcome: "Salam. Administrasiya Panele daxil oldugunuz üchün teshekkür edirik."
-        view: "Achmag"
-        edit: "Deyishmek"
-        delete: "Silmek"
-        delete_confirmation: "Eminsizki bunu silmek isteyirsiniz?"
+          button_label: "Məlumat"
+        any: "Hər biri"
+        dashboard: Istifadə Paneli
+        dashboard_welcome: "Salam. Administrasiya Panelə daxil oldugunuz üçün təşəkkür edirik."
+        view: "Açmag"
+        edit: "Dəyişmək"
+        delete: "Silmək"
+        delete_confirmation: "Əminsizki bunu silmək istəyirsiniz?"
         new_model: "Yaratmag"
-        edit_model: "Deyishmek"
-        delete_model: "Silmek"
-        details: "%{model} elave"
-        cancel: "Legv et"
-        empty: "Boshdir"
+        edit_model: "Dəyişmək"
+        delete_model: "Silmək"
+        details: "%{model} əlave"
+        cancel: "Ləgv et"
+        empty: "Boshdır"
         previous: "Qeri"
-        next: "Növbeti"
-        download: "Yükleme:"
-        has_many_new: "Elave etmek"
-        has_many_delete: "Silmek"
-        has_many_remove: "Yigishtirmag"
+        next: "Növbəti"
+        download: "Yükləmə:"
+        has_many_new: "Eləvə etmək"
+        has_many_delete: "Silmək"
+        has_many_remove: "Yıgıştırmag"
         filters:
           buttons:
-            filter: "Filtr etmek"
-            clear: "Boshaltmag"
+            filter: "Filtr etmək"
+            clear: "Boşaltmag"
           predicates:
             contains: "Daxildir"
             equals: "="
-            starts_with: "Bashlanir"
-            ends_with: "Qurtarir"
-            greater_than: "chox"
+            starts_with: "Başlanır"
+            ends_with: "Qurtarır"
+            greater_than: "çox"
             less_than: "az"
         status_tag:
-          "yes": "He"
+          "yes": "Hə"
           "no": "Yox"
-        main_content: "Yaradin %{model}#main_content daxilini göstermek üchün."
-        logout: "Chixmag"
-        powered_by: "Düzeldilib %{active_admin} %{version}"
+        main_content: "Yaradın %{model}#main_content daxilini göstərmək üchün."
+        logout: "Çixmag"
+        powered_by: "Düzəldilib %{active_admin} %{version}"
         sidebars:
           filters: "Filtrlar"
         pagination:
-          empty: "Tapilmayib"
-          one: "Netice: <b>1</b> %{model}"
-          one_page: "Netice: <b>%{n}</b> %{model}"
-          multiple: "Netice: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
-          multiple_without_total: "Netice: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
+          empty: "Tapılmayıb"
+          one: "Nəticə: <b>1</b> %{model}"
+          one_page: "Nəticə: <b>%{n}</b> %{model}"
+          multiple: "Nəticə: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> из <b>%{total}</b>"
+          multiple_without_total: "Nəticə: %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b>"
           entry:
-            one: "yazi"
-            few: "yazilar"
-            many: "yazilar"
-            other: "yazilar"
-          any: "Her bir"
+            one: "yazı"
+            few: "yazılar"
+            many: "yazılar"
+            other: "yazılar"
+          any: "Hər biri"
           blank_slate:
-            content: "Heleki yox %{resource_name}."
+            content: "Hələki  %{resource_name} yoxdur."
             link: "Yaratmag"
           dropdown_actions:
-            button_label: "Emeliyatlar"
+            button_label: "Əməliyatlar"
           batch_actions:
-            button_label: "Qrupp emeliyatlari"
-            default_confirmation: "Eminsizki bunu etmek isteyirsiz?"
-            delete_confirmation: "Eminsinizki bunu silmek isteyirsiz?"
+            button_label: "Qrupp əməliyatları"
+            default_confirmation: "Əminsizki bunu etmək istəyirsiz?"
+            delete_confirmation: "Əminsinizki bunu silmək istəyirsiz?"
             succesfully_destroyed:
               one: "Silindi."
               few: "Silindi."
@@ -172,7 +172,7 @@ az:
               other: "Silindi."
             selection_toggle_explanation: "(Qeri qaytarmag)"
             link: "Yaratmag"
-            action_label: "%{title} sechilmish"
+            action_label: "%{title} seçilmiş"
             labels:
-              destroy: "Silmek"
+              destroy: "Silmək"
 ###Devise --Using Devise18n Gem ;)
