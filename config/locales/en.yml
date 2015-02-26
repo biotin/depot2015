@@ -22,7 +22,7 @@
 en:
       layouts:
         application:
-          title:               "Pragmatic Bookshelf"
+          title:               "Book House"
           home:            "Home"
           questions:     "Questions"
           news:             "News"
@@ -30,8 +30,16 @@ en:
 
       store:
           index:
-            title_html:        "Your Catalog"
+            title_html:        "Our Books"
             add_html:         "Add to Cart"
+
+#ShowViewTranslate
+      prodedit:                       "Edit"
+      prodback:                      "Back"
+      prodname:                     "Books Name"
+      proddescr:                    "Description"
+      prodprice:                    "Price: "
+
 
       carts:
         cart:

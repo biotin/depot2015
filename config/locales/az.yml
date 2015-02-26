@@ -7,11 +7,18 @@ az:
           questions:     "Suallar"
           news:             "Xəbərlər"
           contact:         "Əlagə"
-        #  productinfo: "Sifarish olunmush mallar"
+        #  productinfo: "Sifarish olunmush Kitablar"
       store:
           index:
-            title_html:        "Katalog"
+            title_html:        "Bizim kitablarımız"
             add_html:         "Karta əlavə et"
+
+#ShowViewTranslate
+      prodedit:                       "Redaktə et"
+      prodback:                      "Qeri"
+      prodname:                     "Kitabın adı: "
+      proddescr:                    "Ətraflı təsviri: "
+      prodprice:                    "Qiymət: "
 
       carts:
         cart:
@@ -60,7 +67,7 @@ az:
       activerecord:
         models:
           order:              "Sifarişlər"
-          product:          "Mallar"
+          product:          "Kitablar"
           admin_user:    "Istifadəçilər"
         attributes:
           order:
@@ -113,6 +120,8 @@ az:
         edit: "Dəyişmək"
         delete: "Silmək"
         delete_confirmation: "Əminsizki bunu silmək istəyirsiniz?"
+        blank_slate:
+          content: "Boşdur"
         new_model: "Yaratmag"
         edit_model: "Dəyişmək"
         delete_model: "Silmək"

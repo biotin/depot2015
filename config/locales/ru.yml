@@ -2,7 +2,7 @@
 ru:
       layouts:
         application:
-          title:               "Магазин"
+          title:               "Дом Книги"
           home:            "Главная"
           questions:     "Вопросы"
           news:             "Новости"
@@ -10,8 +10,16 @@ ru:
 
       store:
           index:
-            title_html:        "Каталог"
+            title_html:        "Наши каталог"
             add_html:         "Добавить на карту"
+
+#ShowViewTranslate
+      prodedit:                       "Редактировать"
+      prodback:                      "Назад"
+      prodname:                     "Название: "
+      proddescr:                    "Подробно: "
+      prodprice:                    "Цена: "
+
 
       carts:
         cart:

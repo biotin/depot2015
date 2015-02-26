@@ -1,23 +1,21 @@
 <p>
-  <strong>Title:</strong>
+  <strong></strong>
+  <%= image_tag(@product.image_url) %>
+</p>
+<p>
+  <strong><%= I18n.t('.prodname') %></strong>
   <%= @product.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><%= I18n.t('proddescr') %></strong>
   <%= @product.description %>
 </p>
-
 <p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
+  <strong><%= I18n.t('prodprice') %></strong>
+  <%= number_to_currency(@product.price, :unit =>'AZN') %>
 </p>
 <% if can?  :update, @product %>
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to I18n.t('.prodedit'), edit_product_path(@product) %> |
 <% end %>
-<%= link_to 'Back', store_path %>
+<%= link_to I18n.t('.prodback'), store_path %>
