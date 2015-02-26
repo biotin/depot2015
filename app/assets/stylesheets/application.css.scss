@@ -14,16 +14,19 @@
  *= require orders
  *= require carts
  *= require store
+ *= require pagination
  *= require_self
  */
 
+
 #banner {
-  background: #9c9;
+  background: #D3D3D3;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #708090;
   text-align: center;
+  border-radius: 10px;
 
   img {
 	 float: left;
@@ -36,7 +39,7 @@
 
      legend {
        color: #dfd;
-       background: #141;
+       background: #D3D3D3;
        font-family: sans-serif;
        padding: 0.2em 1em;
      }
@@ -82,23 +85,27 @@
 }
 
 #columns {
-  background: #141;
+  background: #D3D3D3;
+  border-radius: 10px;
 
   #main {
 	 margin-left: 270px;
 	 padding: 1em;
-         background: white;
+   background: #F0FFF0;
+   border-radius: 10px;
   }
 
   #side {
    float: left;
    padding: 1em 2em;
    width: 13em;
-   background: #141;
+   background: #D3D3D3;
+   border-radius: 10px;
    a{background-color:transparent;}
    width: 200px;
    form, div {
     display: inline;
+
    }
 
    input {
@@ -122,8 +129,8 @@
 	 li {
  	    list-style: none;
  	    a {
- 		color: #bfb;
- 		font-size: small;
+ 		color: #191F19;
+ 		font-size: medium;
               }
  	    }
      }
