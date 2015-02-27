@@ -8,7 +8,7 @@ class StoreController < ApplicationController
       if params[:set_locale]
         redirect_to store_url(locale: params[:set_locale])
       else
-	       @products = Product.where(locale: I18n.locale).order(:title).paginate(page: params[:page], per_page: 1)
+	       @products = Product.where(locale: I18n.locale).page(params[:page]).per(1)
       end
   end
 end
